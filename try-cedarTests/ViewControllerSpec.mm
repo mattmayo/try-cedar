@@ -14,7 +14,8 @@ describe(@"ViewController", ^{
     });
     
     it(@"ViewController should instantiate", ^{
-        viewController should exist;
+        viewController = [[ViewController alloc] init];
+        viewController should_not be_nil;
     });
 });
 
